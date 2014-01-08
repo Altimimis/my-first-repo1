@@ -1,0 +1,59 @@
+html, body {
+	font-family: Helvetica, Arial, Serif;
+	font-size: 16px;
+	background-color: #00FFFB;
+	color: #fff;
+}
+
+h1 {
+	font-weight: 250;
+	font-size: 40px;
+	color: #333;
+	text-align: center;
+}
+
+h2 {
+
+	font-weight: bold;
+	color: #333;
+	font-size: 18px;
+
+}
+a {
+
+	color:#fff;
+	text-decoration: none;
+
+}
+
+.mypage {
+	width: 800px;
+	margin: 25px auto;
+	padding: 1px 20px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+	background-color: #2FA19F;
+
+}
+
+.image1 {
+	float: left;
+	width: 150px;	
+	height: 150px;
+	border-radius: 12200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+header h1 {
+	line-height: 110px;
+
+
+}
+
+article {
+
+	padding: 20px;
+
+}
+
