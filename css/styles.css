@@ -1,12 +1,12 @@
 html, body {
 	font-family: Helvetica, Arial, Serif;
 	font-size: 16px;
-	background-color: #1BD8F5;
+	background-color: #E6E6E6;
 	color: #333;
 }
 
 h1 {
-	font-weight: 200;
+	font-weight: 200v;
 	font-size: 32px;
 	color: #666;
 	text-align: center;
@@ -31,7 +31,7 @@ a {
 	margin: 20px auto;
 	padding: 10px 20px;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
-	background-color: #ADF4FF;
+	background-color: #CFD0D1;
 
 }
 
@@ -65,7 +65,10 @@ header h1 {
 
 article {
 
-	padding: 20px;
+
+	padding: 25px;
 
 }
+
+
 
