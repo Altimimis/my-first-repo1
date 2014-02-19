@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-
+<html>
     <head>
         <meta charset="utf-8">
         <title>Saif Altimimi - This is my webpage</title>
@@ -8,111 +8,135 @@
 
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/normalize.css">
-        
+        <link rel="stylesheet" href="libs/dist/css/bootstrap.min.css">
     </head>
     <body>
-        
-        <section class="mypage">
-            <header>
-                <img src="img/1382272_10153415342770626_1649613917_n (1).jpg" class="image1">
-                <h1>Hello, My name is <b>Saif Altimimi</b></h1>
-            </header>
+        <header class = "navbar navbar-inverse navbar-fixed-top clearfix main-header">
+            <div class = "container-fluid">
+     
+                <button type= "button" class = "navbar-toggle" data-toggle = "collapse" data-target = " .navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand text-muted">Personal Page</a>
+                </div>
 
-            <article>
-                <h2>About me</h2>
-                <ul>
-                    <p>
-                        I'm 23 years old from Waterloo, Ontario. I am a technology entrepreneur currently working on building elegant bitcoin applications.
-                    </p>
-                    </article>
-            <article>
-                <h2> Projects </h2>
+                <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">Get in touch </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </header>
+        <div class = "container">
+            <div class = "row jumbotron">
+                <div class = "col-md-4">
+                   <img src="img/profilepic.jpg" class="avatar-image img-responsive" alt="Saif altimimis avatar">
+                </div>
 
-                    <li>
-                        <a href="http://www.Coursemodo.com"> Coursemodo</a>
-                    </li>
-                    <li>
-                        <a href="http://www.NoteWagon.com" >NoteWagon</a>
-                    </li>
-                    <li>
-                        <a href="http://www.campusmemes.com" >Campus Memes</a>
-                    </li>
-                    <li>
-                        <a href="www.Bitcoin.org" >Will work for Bitcoin</a>
-                    </li>
-                </ul>
-            </article>
+                <div class="col-md-8 col-md-10">
+                    <h1>Hi, I'm <b>Saif Altimimi</b> <span class="glyphicon glyphicon-tree-conifer"></span></h1>
 
-            <article>
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>
-                        Soccer
-                    </li>
-                    <li>
-                        Travelling
-                    </li>
-                    <li>
-                        Economics
-                    </li>
-                </ul>
-            </article>
-
-            <article>
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        Environmental Engineering, University of Guelph
-                    </li>
-                    
-                </ul>
-            </article>
+                    <a href="#contactModal" class="btn btn-success btn-lg pull-right" data-toggle="modal">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
             <hr>
+            <div class = "modal fade" id="contactModal">
+                <div class = "modal-dialog">
+                    <div class = "modal-content"> 
+                        <div class="modal-header">
+                            Get in touch!
+                            <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                       
+                        <div class = "modal-body">
+                        <form>
+                            <div class = "form-group">
+                                <label class = "sr-only" for = "email">email</label>
+                                <input type="email" class="form-control" id="email" placeholder="@mail">
+                                <br>
+                                <textarea class="form-control" placeholder="Write a meaningful message.">
+                                    
+                                </textarea>
+                                <br>
+                                <button type="submit" class="btn btn-primary " data-dismiss="modal">Send</button>
 
-            <article>
-                <h2>Contact</h2>
-                <ul>
-                    <li>
-                        Email me at: <a href="mailt:Saif@Altimimi.co">Saif@Altimimi.co</a>.
-                    </li>
+                                or Email me  <a href="mailto:Saif@Altimimi.co">Saif@Altimimi.co</a>
 
-                     <br>
-
-                     </br>   
-
-                    <script src="http://coinwidget.com/widget/coin.js"></script>
-                <script>
-            CoinWidgetCom.go({
-             wallet_address: "1JGtYqTLF3Ps2c9xbdZpvXE3UDCNgwbYCe"
-            , currency: "bitcoin"
-            , counter: "count"
-            , alignment: "bl"
-            , qrcode: true
-            , auto_show: false
-            , lbl_button: "Donate"
-            , lbl_address: "My Bitcoin Address:"
-            , lbl_count: "donations"
-            , lbl_amount: "BTC"
-                });
-            </script>
-
-
-                </ul>
-            </article>
-
-        </section>
-
-    <section class="mypage">
-            <footer>
-                <a href="http://www.linkedin.com/in/saifaltimimi"> <img src="img/linkedin.png" class="image2"> </a>
-                 <a href="http://www.facebook.com/altimimi"><img src="img/facebook.png" class="image2"> </a>
-                    <a href="http://www.twitter.com/saifaltimimi"><img src="img/twitter.png" class="image2">
-                     <a href="https://github.com/Altimimis"><img src="img/github.png" class="image2"> </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
            
-            </footer>
-</section>
-        
-    </body>2
+        <div class="container">
+            <div class="row">
+                <article class = "col-sm-8 col-md-4">
+                    <h2> Work </h2>
+                    <ul>
+                        <li>
+                            I run a digital currency exchange <a href="http://www.coins-e.com">Coins-E</a>.
+                        </li>
+                        <li> I'm learning front-end development at Brainstation</li>
+                        <li> Co-founded Scholarpanda inc : <a href="http://www.NoteWagon.com">NoteWagon</a> <a href="http://www.coursemodo.com">Coursemodo</a> </li>
+                    
+                    </ul>
+                </article>
 
+                <article class = "col-sm-8 col-md-4">
+                    <h2> Hobbies </h2>
+                    <ul>
+                        <li> Travelling </li>
+                        <li> Startups </li>
+                        <li> <a href="http:/www.bitcoin.org"> Bitcoin </a> </li>
+                        <li> Fitness </li>
+                    </ul>
+                </article>
+
+                <article class = "col-sm-8 col-md-4">
+                    <h2> Education </h2>
+                    <ul> 
+                        <li>BsEng, Environmental Engineering, University of Guelph </li>
+                    </ul>
+                    
+                </article>
+            </div>
+        </div>
+        <hr>
+        <br>
+
+        <footer> 
+            <section>
+      
+                <h6>Copyright Saif Altimimi</h6>
+           
+
+                <nav class="social-nav group">
+                    <a href="http://facebook.com" class="sprite-social facebook"> Facebook</a>
+                    <a href="http://twitter.com" class="sprite-social twitter"> Twitter</a>
+                    <a href="http://linkedin.com" class="sprite-social linkedin">Linkedin</a>
+                    <a href="http://plus.google.com" class="sprite-social google">Google</a>
+                </nav>
+            </section>
+        </footer>
+
+
+
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="libs/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
